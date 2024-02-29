@@ -8,6 +8,15 @@ function createRows(){
     for(let i=0; i<2; i++){
         var rowContainer=document.createElement('div')
         rowContainer.classList.add('row', 'pt-2')
+        if(i===0){
+            list_1=['Genova', 'Inverness', 'Edimburgh', 'Rapallo']
+            list_2=['15 mins drive', '2 hrs flight', '1.5 hrs flight', '2 hrs drive']
+            images=['assets/images/paesaggi/01-Remo-Lanzoni-Panorama-dal-Passo-Giau.jpg', 'assets/images/paesaggi/Depositphotos_121817610_S.webp', 'assets/images/paesaggi/Immagine-copertina-per-blog-1-2-2.webp', 'assets/images/paesaggi/italia-carta-natura-ispra-almeno-37-tipi-di-paesaggio-quali-sono-1637578644759_1280.webp']
+        }else{
+            list_1=['Milan', 'Montecarlo', 'Kirkwall', 'Nordkapp']
+            list_2=['1.5 hrs drive', '2 hr drive', '1 hr drive', '10 hrs flight']
+            images=['assets/images/paesaggi/forest-landscape_71767-127.avif', 'assets/images/paesaggi/gettyimages-691930476-612x612.jpg', 'assets/images/paesaggi/photo-1503614472-8c93d56e92ce.avif', 'assets/images/paesaggi/istockphoto-483724081-612x612.jpg']
+        }
         for(let j=0; j<images.length; j++){
             var columnContainer=document.createElement('div')
             columnContainer.classList.add('col', 'd-flex', 'align-items-center')
